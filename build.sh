@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-FFMPEG_KIT_TAG="min.v5.1.2.7"
+FFMPEG_KIT_TAG="min.v5.1.2.8"
 FFMPEG_KIT_CHECKOUT="origin/develop"
 #FFMPEG_KIT_CHECKOUT="origin/tags/$FFMPEG_KIT_TAG"
 
@@ -30,7 +30,7 @@ brew install autoconf automake libtool pkg-config curl git doxygen nasm bison wg
 #echo "Building for tvOS..."
 #./tvos.sh --enable-tvos-audiotoolbox --enable-tvos-videotoolbox --enable-tvos-zlib --enable-tvos-bzip2 --no-bitcode --enable-gmp -x --enable-gpl --enable-x264
 echo "Building for macOS..."
-./macos.sh --enable-macos-audiotoolbox --enable-macos-avfoundation --enable-macos-bzip2 --enable-macos-videotoolbox --enable-macos-zlib --enable-macos-coreimage --enable-macos-opencl --enable-gmp -x
+./macos.sh --enable-macos-audiotoolbox --enable-macos-avfoundation --enable-macos-bzip2 --enable-macos-videotoolbox --enable-macos-zlib --enable-macos-coreimage --enable-macos-opencl --enable-gmp -x --enable-openh264
 #echo "Building for watchOS..."
 #./watchos.sh --enable-watchos-zlib --enable-watchos-bzip2 --no-bitcode --enable-gmp -x
 
